@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="delete-btn">Excluir</button>
             `;
 
-            const checkbox = li.querySelector('input');
-            checkbox.addEventListener('change', () => toggleTask(index));
+            const checkbox = li.querySelector('.checkbox');
+            checkbox.addEventListener('click', () => toggleTask(completed));
 
             const deleteBtn = li.querySelector('.delete-btn');
             deleteBtn.addEventListener('click', () => deleteTask(index));
