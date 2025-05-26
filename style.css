@@ -72,7 +72,7 @@ ul {
     transform: translateX(5px);
 }
 
-.task-item.completed {
+.task-item.completed span{
     background-color: #e0e0e0;
     text-decoration: line-through;
     color: #666;
