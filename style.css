@@ -99,6 +99,24 @@ ul {
     background-color: #cc0000;
 }
 
+.actions {
+    text-align: center;
+    margin-bottom: 15px;
+}
+#clearButton {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#clearButton:hover {
+    background-color: #cc0000;
+}
+
 @media (max-width: 480px) {
     .container {
         padding: 15px;
@@ -109,6 +127,11 @@ ul {
     }
 
     #addButton {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #clearButton {
         width: 100%;
         padding: 12px;
     }

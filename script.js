@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskInput = document.getElementById('taskInput');
     const addButton = document.getElementById('addButton');
     const taskList = document.getElementById('taskList');
-    
+    const clearButton = document.getElementById('clearButton');
+
     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
     function saveTasks() {
@@ -63,4 +64,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     renderTasks();
+
+    function clearAllTasks() {
+        tasks = [];
+        saveTasks();
+        renderTasks();
+    }
+    
+    clearButton.addEventListener('click', clearAllTasks); 
 });
